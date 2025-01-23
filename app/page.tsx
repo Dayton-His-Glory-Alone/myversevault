@@ -6,8 +6,8 @@ export default function Home() {
       {/* Header */}
       <header className="w-full text-center py-8">
         <Image src="/appicon.png" alt="App Icon" width={100} height={100} />
-        <h1 className="text-4xl font-bold mt-4">Rejoicify</h1>
-        <p className="text-lg mt-2">Your Gospel Music Hub</p>
+        <h1 className="text-4xl font-bold mt-4">Verse Vault</h1>
+        <p className="text-lg mt-2">Lock in the scripture</p>
       </header>
 
       {/* Main Content */}
@@ -20,9 +20,8 @@ export default function Home() {
           className="rounded-lg shadow-lg"
         />
         <p className="text-center text-lg max-w-prose">
-          Discover a vast library of gospel music at your fingertips. Rejoicify
-          lets you stream and organize your favorite songs while enjoying a
-          seamless, ad-free experience.
+          Gamify scripture memory and make scripture memory easy with Verse Vault.
+          Flashcard, Drag and drop, type it out, and a voice mode.
         </p>
 
         {/* App Store Buttons */}
