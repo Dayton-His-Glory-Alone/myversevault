@@ -32,7 +32,7 @@ export default function Home() {
             rel="noopener noreferrer"
           >
             <Image
-              src="/appleappstore.png"
+              src="/apple.jpg"
               alt="Download on the App Store"
               width={150}
               height={50}
@@ -45,7 +45,7 @@ export default function Home() {
             rel="noopener noreferrer"
           >
             <Image
-              src="/googleplaylogo.png"
+              src="/google.jpg"
               alt="Get it on Google Play"
               width={150}
               height={50}
