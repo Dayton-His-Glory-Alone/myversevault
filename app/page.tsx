@@ -38,6 +38,7 @@ export default function Home() {
         <p className="text-center text-lg max-w-prose" style={{ fontFamily: 'Roboto, sans-serif' }}>
           Features ESV and KJV translations. Includes commentary along with scripture.
         </p>
+        <h1 className="text-4xl font-bold mt-4" style={{ fontFamily: 'Roboto, sans-serif', color: '#006400' }}>Start your journey now...</h1>
         {/* App Store Buttons */}
         <div className="flex gap-4 mt-4">
           <a
