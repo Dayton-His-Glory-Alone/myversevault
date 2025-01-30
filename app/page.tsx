@@ -16,7 +16,9 @@ export default function Home() {
         <h1 className="text-4xl font-bold mt-4" style={{ fontFamily: 'Patrick Hand, cursive' }}>Verse Vault</h1>
         <p className="text-lg mt-2" style={{ fontFamily: 'Patrick Hand, cursive' }}>Lock in the scripture</p>
       </header>
-
+      <header className="w-full text-center py-8">
+        <h1 className="text-4xl font-bold mt-4" style={{ fontFamily: 'Patrick Hand, cursive' }}>Who are you becoming?</h1>
+      </header>
       {/* Main Content */}
       <main className="flex flex-col items-center gap-8 px-4">
         <Image
