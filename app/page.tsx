@@ -13,7 +13,10 @@ export default function Home() {
       {/* Header */}
       <header className="w-full text-center py-8">
         <Image src="/appicon.png" alt="App Icon" width={100} height={100} />
-        <h1 className="text-4xl font-bold mt-4" style={{ fontFamily: 'Roboto, sans-serif', color: '#006400' }}>Go Deeper</h1>
+        <h1 className="text-4xl font-bold mt-4" style="font-family: 'Roboto, sans-serif';">
+  <span style="color: #000000;">Go</span> 
+  <span style="color: #004d00;">Deeper</span>
+</h1>
         <p className="text-lg mt-2" style={{ fontFamily: 'Roboto, sans-serif' }}>Lock in the scripture</p>
       </header>
       {/* Main Content */}
