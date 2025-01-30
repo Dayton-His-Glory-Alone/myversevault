@@ -45,7 +45,7 @@ export default function Home() {
             rel="noopener noreferrer"
           >
             <Image
-              src="/google.jpg"
+              src="/google.png"
               alt="Get it on Google Play"
               width={150}
               height={50}
