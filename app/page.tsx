@@ -32,7 +32,7 @@ export default function Home() {
             rel="noopener noreferrer"
           >
             <Image
-              src="/apple.jpg"
+              src="/apple.png"
               alt="Download on the App Store"
               width={150}
               height={50}
