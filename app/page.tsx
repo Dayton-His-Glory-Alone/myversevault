@@ -17,7 +17,7 @@ export default function Home() {
   <span style="color: #000000;">Go</span> 
   <span style="color: #004d00;">Deeper</span>
 </h1>
-        <p className="text-lg mt-2" style={{ fontFamily: 'Roboto, sans-serif' }}>Lock in the scripture</p>
+        <p className="text-lg mt-2" style={{ fontFamily: 'Roboto, sans-serif' }}>Gamify scripture memory</p>
       </header>
       {/* Main Content */}
       <main className="flex flex-col items-center gap-8 px-4">
@@ -33,13 +33,13 @@ export default function Home() {
           Flashcard, Drag and drop, type it out, and a voice mode.
         </p>
         <ul className="text-left text-lg max-w-prose" style={{ fontFamily: 'Roboto, sans-serif' }}>
-          <li>Strengthen your faith</li>
-          <li>Deepen your understanding of scripture</li>
-          <li>Enhance your spiritual growth</li>
-          <li>Improve your memory skills</li>
+          <li>- Strengthen your faith</li>
+          <li>- Deepen your understanding of scripture</li>
+          <li>- Enhance your spiritual growth</li>
+          <li>- Improve your memory skills</li>
         </ul>
         <p className="text-center text-lg max-w-prose" style={{ fontFamily: 'Roboto, sans-serif' }}>
-          Features ESV and KJV translations. Includes commentary along with scripture.
+          Features ESV and KJV translations along with commentary.
         </p>
         <h1 className="text-4xl font-bold mt-4" style={{ fontFamily: 'Roboto, sans-serif', color: '#006400' }}>Start your journey now...</h1>
         {/* App Store Buttons */}
