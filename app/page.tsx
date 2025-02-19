@@ -152,7 +152,7 @@ export default function Home() {
         {/* App Store Buttons */}
         <div className="flex gap-4 mt-4">
           <a
-            href="https://apps.apple.com/us/app/rejoicify-gospel-music/id6447961615"
+            href="https://apps.apple.com/us/app/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -165,7 +165,7 @@ export default function Home() {
             />
           </a>
           <a
-            href="https://play.google.com/store/apps/details?id=org.rejoicemusic.app"
+            href="https://play.google.com/store"
             target="_blank"
             rel="noopener noreferrer"
           >
