@@ -40,9 +40,7 @@ export default function Home() {
       } else {
         setMessage("Something went wrong. Please try again.");
       }
-    } catch (_error) {
-      setMessage("Something went wrong. Please try again.");
-    }
+    } 
   };
 
   return (
