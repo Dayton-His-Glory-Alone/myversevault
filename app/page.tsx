@@ -65,7 +65,7 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
       {/* Main Content */}
       <main className="flex flex-col items-center gap-8 px-4">
         <Image
-          src="/vv (1).png"
+          src="/vv2.png"
           alt="App Promo in Action"
           width={600}
           height={400}
