@@ -17,34 +17,33 @@ export default function Home() {
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  e.preventDefault();
 
-    const formData = new FormData();
-    formData.append("name", name);
-    formData.append("email", email);
+  const formData = new FormData();
+  formData.append("name", name);
+  formData.append("email", email);
 
-    try {
-      const response = await fetch("https://formspree.io/f/xpwqkojq", {
-        method: "POST",
-        body: formData,
-        headers: {
-          Accept: "application/json",
-        },
-      });
+  try {
+    const response = await fetch("https://formspree.io/f/inserthere", {
+      method: "POST",
+      body: formData,
+      headers: {
+        Accept: "application/json",
+      },
+    });
 
-      if (response.ok) {
-        setMessage("Thank you for joining the waitlist!");
-        setName("");
-        setEmail("");
-      } else {
-        setMessage("Something went wrong. Please try again.");
-      }
-    } catch {
-      // Handle the error (e.g., log it or show a user-friendly message)
+    if (response.ok) {
+      setMessage("Thank you for joining the waitlist!");
+      setName("");
+      setEmail("");
+    } else {
       setMessage("Something went wrong. Please try again.");
     }
-  };
+  } catch {
+    setMessage("Something went wrong. Please try again.");
+  }
+};
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-50 text-gray-800">
