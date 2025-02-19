@@ -25,7 +25,7 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
   formData.append("email", email);
 
   try {
-    const response = await fetch("https://formspree.io/f/inserthere", {
+    const response = await fetch("https://formspree.io/f/xpwqkojq", {
       method: "POST",
       body: formData,
       headers: {
