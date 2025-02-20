@@ -72,28 +72,18 @@ export default function Home() {
           height={400}
           className="rounded-lg shadow-lg"
         />
-
+   <p className={`text-center text-lg max-w-prose ${roboto.className}`}>
+          Make scripture memory easy and build a strong foundation with Verse Vault. Create a habit of locking in scripture. Our diverse learning methods, including flashcards, interactive exercises, typing practice, and voice mode, ensure effective retention.
+        </p>
         {/* Video Section */}
-        <div className="w-full max-w-xs"> {/* Adjusted width to make the video 5x smaller */}
+        <div className="w-full max-w-xs"> 
           <video controls loop className="rounded-lg shadow-lg w-full">
             <source src="/demo2.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
 
-        <p className={`text-center text-lg max-w-prose ${roboto.className}`}>
-          Gamify scripture memory and make scripture memory easy with Verse
-          Vault. Flashcard, Drag and drop, type it out, and a voice mode.
-        </p>
-        <ul className={`text-left text-lg max-w-prose ${roboto.className}`}>
-          <li>- Strengthen your faith</li>
-          <li>- Deepen your understanding of scripture</li>
-          <li>- Enhance your spiritual growth</li>
-          <li>- Improve your memory skills</li>
-        </ul>
-        <p className={`text-center text-lg max-w-prose ${roboto.className}`}>
-          Features ESV and KJV translations along with commentary.
-        </p>
+
         <h1 className={`text-4xl font-bold mt-4 ${roboto.className}`} style={{ color: "#006400" }}>
           Start your journey now...
         </h1>
