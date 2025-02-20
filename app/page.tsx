@@ -17,33 +17,33 @@ export default function Home() {
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
 
-const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-  e.preventDefault();
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
 
-  const formData = new FormData();
-  formData.append("name", name);
-  formData.append("email", email);
+    const formData = new FormData();
+    formData.append("name", name);
+    formData.append("email", email);
 
-  try {
-    const response = await fetch("https://formspree.io/f/xpwqkojq", {
-      method: "POST",
-      body: formData,
-      headers: {
-        Accept: "application/json",
-      },
-    });
+    try {
+      const response = await fetch("https://formspree.io/f/xpwqkojq", {
+        method: "POST",
+        body: formData,
+        headers: {
+          Accept: "application/json",
+        },
+      });
 
-    if (response.ok) {
-      setMessage("Thank you for joining the waitlist!");
-      setName("");
-      setEmail("");
-    } else {
+      if (response.ok) {
+        setMessage("Thank you for joining the waitlist!");
+        setName("");
+        setEmail("");
+      } else {
+        setMessage("Something went wrong. Please try again.");
+      }
+    } catch {
       setMessage("Something went wrong. Please try again.");
     }
-  } catch {
-    setMessage("Something went wrong. Please try again.");
-  }
-};
+  };
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-50 text-gray-800">
@@ -64,13 +64,14 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
       </header>
       {/* Main Content */}
       <main className="flex flex-col items-center gap-8 px-4">
-        <Image
-          src="/vv2.png"
-          alt="App Promo in Action"
-          width={600}
-          height={400}
-          className="rounded-lg shadow-lg"
-        />
+        {/* Video Section */}
+        <div className="w-full max-w-2xl">
+          <video controls className="rounded-lg shadow-lg w-full">
+            <source src="/demo2.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
         <p className={`text-center text-lg max-w-prose ${roboto.className}`}>
           Gamify scripture memory and make scripture memory easy with Verse
           Vault. Flashcard, Drag and drop, type it out, and a voice mode.
