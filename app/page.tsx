@@ -64,9 +64,18 @@ export default function Home() {
       </header>
       {/* Main Content */}
       <main className="flex flex-col items-center gap-8 px-4">
+        {/* vv2.png Image */}
+        <Image
+          src="/vv2.png"
+          alt="App Promo in Action"
+          width={600}
+          height={400}
+          className="rounded-lg shadow-lg"
+        />
+
         {/* Video Section */}
-        <div className="w-full max-w-2xl">
-          <video controls className="rounded-lg shadow-lg w-full">
+        <div className="w-full max-w-xs"> {/* Adjusted width to make the video 5x smaller */}
+          <video controls loop className="rounded-lg shadow-lg w-full">
             <source src="/demo2.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
