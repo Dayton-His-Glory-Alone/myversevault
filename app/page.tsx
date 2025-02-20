@@ -73,7 +73,7 @@ export default function Home() {
           className="rounded-lg shadow-lg"
         />
    <p className={`text-center text-lg max-w-prose ${roboto.className}`}>
-          Make scripture memory easy and build a strong foundation with Verse Vault. Create a habit of locking in scripture. Our diverse learning methods, including flashcards, interactive exercises, typing practice, and voice mode, ensure effective retention.
+          Create a habit of locking in scripture. Our diverse learning methods, including flashcards, interactive exercises, typing practice, and voice mode, ensure effective retention.
         </p>
         {/* Video Section */}
         <div className="w-full max-w-xs"> 
