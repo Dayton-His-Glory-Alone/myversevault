@@ -14,7 +14,7 @@ const PrivacyPolicy = () => {
       <p>
         Verse Vault does not collect personal information such as name, email,
         or phone number. Any app data, including user progress, is stored
-        locally on the user's device.
+        locally on the users device.
       </p>
 
       <h2>2. Third-Party Services</h2>
@@ -27,7 +27,7 @@ const PrivacyPolicy = () => {
         .
       </p>
 
-      <h2>3. Children's Privacy</h2>
+      <h2>3. Children Privacy</h2>
       <p>
         Verse Vault is not specifically targeted at children under 13.
         However, it can be used by them with parental guidance. The app does
