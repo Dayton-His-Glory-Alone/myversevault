@@ -1,50 +1,67 @@
-import React from 'react';
+import React from "react";
 
 const PrivacyPolicy = () => {
   return (
-    <div style={{ maxWidth: '800px', margin: '0 auto', padding: '20px' }}>
-      <h1>Privacy Policy for Verse Vault</h1>
-      <p><strong>Effective Date:</strong> [Insert Date]</p>
-      
-      <h2>1. Introduction</h2>
-      <p>Welcome to Verse Vault! Your privacy is important to us. This Privacy Policy explains how we handle data within the app.</p>
-      
-      <h2>2. Information We Collect</h2>
+    <div style={{ padding: "20px", maxWidth: "800px", margin: "auto" }}>
+      <h1>Privacy Policy</h1>
+      <p>
+        This Privacy Policy ensures transparency while complying with app store
+        requirements. If you plan to add third-party services in the future,
+        this policy should be updated accordingly.
+      </p>
+
+      <h2>1. Data Collection & Storage</h2>
+      <p>
+        Verse Vault does not collect personal information such as name, email,
+        or phone number. Any app data, including user progress, is stored
+        locally on the user's device.
+      </p>
+
+      <h2>2. Third-Party Services</h2>
+      <p>
+        Verse Vault does not currently use third-party services but may in the
+        future. The app includes an external link to{" "}
+        <a href="https://www.buymeacoffee.com/" target="_blank" rel="noopener noreferrer">
+          Buy Me a Coffee
+        </a>
+        .
+      </p>
+
+      <h2>3. Children's Privacy</h2>
+      <p>
+        Verse Vault is not specifically targeted at children under 13.
+        However, it can be used by them with parental guidance. The app does
+        not collect any personal information from children.
+      </p>
+
+      <h2>4. Security Measures</h2>
+      <p>
+        Since Verse Vault does not store data externally, there is no risk of
+        remote data breaches. Users are encouraged to protect their devices
+        to ensure data security.
+      </p>
+
+      <h2>5. Permissions & Device Data</h2>
+      <p>The app requires the following permissions:</p>
       <ul>
-        <li>Verse Vault does <strong>not</strong> collect personal information such as your name, email, or phone number.</li>
-        <li>User progress and preferences are stored <strong>locally on your device</strong> and are not transmitted to external servers.</li>
+        <li>Full network access</li>
+        <li>Control vibration</li>
+        <li>Google Play license check</li>
       </ul>
-      
-      <h2>3. Third-Party Services</h2>
-      <ul>
-        <li>Currently, Verse Vault does not use third-party analytics, ads, or external services that collect data.</li>
-        <li>The app contains an external link to "Buy Me a Coffee," which directs users to an external website. Any data collected on that website is subject to its own privacy policy.</li>
-      </ul>
-      
-      <h2>4. Children’s Privacy</h2>
-      <p>Verse Vault is <strong>not targeted at children under 13</strong>. However, it may be used by children under parental guidance.</p>
-      <p>We do not knowingly collect any personal data from children under 13. If you believe a child has provided personal data, please contact us at <a href="mailto:daytonrumbold@gmail.com">daytonrumbold@gmail.com</a>.</p>
-      
-      <h2>5. Permissions Used</h2>
-      <ul>
-        <li><strong>Full network access</strong> – To allow external links to function.</li>
-        <li><strong>Control vibration</strong> – For optional feedback interactions.</li>
-        <li><strong>Google Play license check</strong> – To verify app licensing and prevent unauthorized use.</li>
-      </ul>
-      
-      <h2>6. Data Security</h2>
-      <p>Since Verse Vault stores data locally on your device, it is your responsibility to protect your device from unauthorized access. We do not have access to or store any user data externally.</p>
-      
-      <h2>7. Changes to This Privacy Policy</h2>
-      <p>We may update this policy as needed. Any changes will be reflected on our website.</p>
-      <p>Continued use of the app after updates constitutes acceptance of the revised policy.</p>
-      
-      <h2>8. Contact Information</h2>
-      <p>For any questions or concerns regarding this Privacy Policy, please contact us at:</p>
-      <p><strong>Email:</strong> <a href="mailto:daytonrumbold@gmail.com">daytonrumbold@gmail.com</a></p>
+
+      <h2>6. Changes to This Privacy Policy</h2>
+      <p>
+        Any updates to this policy will be posted on our website. Users should
+        review this policy periodically for changes.
+      </p>
+
+      <h2>7. Contact Information</h2>
+      <p>
+        If you have any questions, contact us at{" "}
+        <a href="mailto:daytonrumbold@gmail.com">daytonrumbold@gmail.com</a>.
+      </p>
     </div>
   );
 };
 
 export default PrivacyPolicy;
-
