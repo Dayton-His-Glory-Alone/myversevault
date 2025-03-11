@@ -58,7 +58,7 @@ const PrivacyPolicy = () => {
       <h2>7. Contact Information</h2>
       <p>
         If you have any questions, contact us at{" "}
-        <a href="mailto:daytonrumbold@gmail.com">daytonrumbold@gmail.com</a>.
+        <a href="mailto:myversevaultapp@gmail.com">myversevaultapp@gmail.com</a>.
       </p>
     </div>
   );
