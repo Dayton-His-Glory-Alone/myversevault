@@ -1,12 +1,17 @@
 "use client"; // Mark as a Client Component
 
 
-import { Player } from '@lottiefiles/react-lottie-player';
+
 import Image from "next/image";
 import Head from "next/head";
 import { useState } from "react";
 import { Roboto } from "next/font/google";
+import dynamic from 'next/dynamic';
 
+const LottiePlayer = dynamic(
+  () => import('@lottiefiles/react-lottie-player').then(mod => mod.Player),
+  { ssr: false }
+);
 // Configure the Roboto font
 const roboto = Roboto({
   weight: ["400", "700"],
@@ -77,13 +82,13 @@ export default function Home() {
         />
         
 <div className="animation-container">
-  <Player
+  <LottiePlayer
     src="/animation.json"
     background="transparent"
     speed={1}
     loop
     autoplay
-  ></Player>
+  />
 </div>
 
         <p className={`text-center text-lg max-w-prose ${roboto.className}`}>
