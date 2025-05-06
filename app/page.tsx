@@ -88,7 +88,44 @@ export default function Home() {
           Start your journey now...
         </h1>
 
-        {/* Waitlist Form */}
+      
+
+        {/* Coming Soon Text */}
+        <h2 className={`text-2xl font-bold mt-4 ${roboto.className}`} style={{ color: "#006400" }}>
+          Available on Android Play Store! Join Waitlist for IOS
+        </h2>
+
+        {/* App Store Buttons */}
+        <div className="flex gap-4 mt-4">
+          <a
+            href="https://apps.apple.com/us/app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image
+              src="/apple.png"
+              alt="Download on the App Store"
+              width={150}
+              height={50}
+              className="hover:scale-105 transition-transform"
+            />
+          </a>
+          <a
+            href="https://play.google.com/store/apps/details?id=com.myversevault.versevault.verse_vault"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image
+              src="/google.png"
+              alt="Get it on Google Play"
+              width={150}
+              height={50}
+              className="hover:scale-105 transition-transform"
+            />
+          </a>
+        </div>
+        
+  {/* Waitlist Form */}
         <div className="w-full max-w-md mt-4">
           <form onSubmit={handleSubmit} className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
             <div className="mb-4">
@@ -124,48 +161,12 @@ export default function Home() {
                 className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
                 type="submit"
               >
-                Join Waitlist
+                Join Waitlist for IOS
               </button>
             </div>
             {message && <p className="text-center mt-4 text-green-600">{message}</p>}
           </form>
         </div>
-
-        {/* Coming Soon Text */}
-        <h2 className={`text-2xl font-bold mt-4 ${roboto.className}`} style={{ color: "#006400" }}>
-          Coming Soon...
-        </h2>
-
-        {/* App Store Buttons */}
-        <div className="flex gap-4 mt-4">
-          <a
-            href="https://apps.apple.com/us/app/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              src="/apple.png"
-              alt="Download on the App Store"
-              width={150}
-              height={50}
-              className="hover:scale-105 transition-transform"
-            />
-          </a>
-          <a
-            href="https://play.google.com/store/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              src="/google.png"
-              alt="Get it on Google Play"
-              width={150}
-              height={50}
-              className="hover:scale-105 transition-transform"
-            />
-          </a>
-        </div>
-
         {/* Story Behind Verse Vault */}
         <div className="w-full max-w-md mt-8 text-center">
           <button
