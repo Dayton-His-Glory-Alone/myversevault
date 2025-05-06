@@ -80,7 +80,7 @@ export default function Home() {
         <img
           src="/animation.gif"
           alt="Animated illustration"
-          style={{ height: "300px", width: "300px" }}
+          style={{ height: "50px", width: "50px" }}
         />
 
         {/* Description */}
