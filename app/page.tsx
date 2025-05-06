@@ -1,6 +1,9 @@
+The issue comes from a misplaced closing `</div>` tag **right after the `<img src="/animation.gif" ... />` element**. That `</div>` prematurely closes the main wrapper, causing the JSX parser to throw an error.
+
+Here’s the **corrected and full `page.tsx`** code with that issue fixed:
+
+```tsx
 "use client"; // Mark as a Client Component
-
-
 
 import Image from "next/image";
 import Head from "next/head";
@@ -54,6 +57,7 @@ export default function Home() {
         <title>GoDeeper</title>
         <meta name="description" content="Gamify scripture memory" />
       </Head>
+
       {/* Header */}
       <header className="w-full text-center py-8">
         <Image src="/appicon.png" alt="App Icon" width={100} height={100} />
@@ -65,9 +69,10 @@ export default function Home() {
           Gamify scripture memory
         </p>
       </header>
+
       {/* Main Content */}
       <main className="flex flex-col items-center gap-8 px-4">
-        {/* vv2.png Image */}
+        {/* Promo Image */}
         <Image
           src="/versevaultpromo.png"
           alt="App Promo in Action"
@@ -75,32 +80,41 @@ export default function Home() {
           height={400}
           className="rounded-lg shadow-lg"
         />
-          <img
-    src="/animation.gif"
-    alt="Animated illustration"
-    style={{ height: '300px', width: '300px' }}
-  />
-</div>
-  
+
+        {/* Animated GIF */}
+        <img
+          src="/animation.gif"
+          alt="Animated illustration"
+          style={{ height: "300px", width: "300px" }}
+        />
+
+        {/* Description */}
         <p className={`text-center text-lg max-w-prose ${roboto.className}`}>
-          Create a habit of locking in scripture. Our diverse learning methods, including flashcards, interactive exercises, typing practice, and voice mode, ensure effective retention.
+          Create a habit of locking in scripture. Our diverse learning methods,
+          including flashcards, interactive exercises, typing practice, and
+          voice mode, ensure effective retention.
         </p>
+
         {/* Video Section */}
-        <div className="w-full max-w-xs"> 
+        <div className="w-full max-w-xs">
           <video controls loop className="rounded-lg shadow-lg w-full">
             <source src="/demo2.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
 
-        <h1 className={`text-4xl font-bold mt-4 ${roboto.className}`} style={{ color: "#006400" }}>
+        <h1
+          className={`text-4xl font-bold mt-4 ${roboto.className}`}
+          style={{ color: "#006400" }}
+        >
           Start your journey now...
         </h1>
 
-      
-
-        {/* Coming Soon Text */}
-        <h2 className={`text-2xl font-bold mt-4 ${roboto.className}`} style={{ color: "#006400" }}>
+        {/* Coming Soon */}
+        <h2
+          className={`text-2xl font-bold mt-4 ${roboto.className}`}
+          style={{ color: "#006400" }}
+        >
           Available on Android Play Store! Join Waitlist for IOS
         </h2>
 
@@ -133,12 +147,18 @@ export default function Home() {
             />
           </a>
         </div>
-        
-  {/* Waitlist Form */}
+
+        {/* Waitlist Form */}
         <div className="w-full max-w-md mt-4">
-          <form onSubmit={handleSubmit} className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+          <form
+            onSubmit={handleSubmit}
+            className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"
+          >
             <div className="mb-4">
-              <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="name">
+              <label
+                className="block text-gray-700 text-sm font-bold mb-2"
+                htmlFor="name"
+              >
                 Name
               </label>
               <input
@@ -152,7 +172,10 @@ export default function Home() {
               />
             </div>
             <div className="mb-6">
-              <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="email">
+              <label
+                className="block text-gray-700 text-sm font-bold mb-2"
+                htmlFor="email"
+              >
                 Email
               </label>
               <input
@@ -173,9 +196,12 @@ export default function Home() {
                 Join Waitlist for IOS
               </button>
             </div>
-            {message && <p className="text-center mt-4 text-green-600">{message}</p>}
+            {message && (
+              <p className="text-center mt-4 text-green-600">{message}</p>
+            )}
           </form>
         </div>
+
         {/* Story Behind Verse Vault */}
         <div className="w-full max-w-md mt-8 text-center">
           <button
@@ -186,14 +212,25 @@ export default function Home() {
           </button>
           {showStory && (
             <div className="mt-4 p-4 bg-white rounded-lg shadow-md">
-<p className="text-gray-700">
-  My wife and I wanted to make a habit of memorizing scripture together, so we started something we called <i>Monday Memory</i>, where we would spend 10 minutes going over a passage. My goal was to make those nights fun and engaging. It started well, but slowly we lost track of the verses we had already memorized, and the new passages were getting more difficult. I wanted a tool that could: 1. keep track of what I have memorized and remind me to refresh, and 2. make it fun. With those goals, I started working on Verse Vault. After a couple of failed attempts, I finally got a working app that I like to use for myself now. I would like to share that with others and hope it encourages you as well.
-</p>
-
+              <p className="text-gray-700">
+                My wife and I wanted to make a habit of memorizing scripture
+                together, so we started something we called{" "}
+                <i>Monday Memory</i>, where we would spend 10 minutes going over
+                a passage. My goal was to make those nights fun and engaging. It
+                started well, but slowly we lost track of the verses we had
+                already memorized, and the new passages were getting more
+                difficult. I wanted a tool that could: 1. keep track of what I
+                have memorized and remind me to refresh, and 2. make it fun.
+                With those goals, I started working on Verse Vault. After a
+                couple of failed attempts, I finally got a working app that I
+                like to use for myself now. I would like to share that with
+                others and hope it encourages you as well.
+              </p>
             </div>
           )}
         </div>
       </main>
+
       {/* Footer */}
       <footer className="w-full text-center py-8 mt-8 bg-gray-100">
         <p className={`text-sm ${roboto.className}`}>
@@ -211,3 +248,6 @@ export default function Home() {
     </div>
   );
 }
+```
+
+Let me know if you want the file as a downloadable copy or need help deploying it.
