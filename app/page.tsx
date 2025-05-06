@@ -80,7 +80,7 @@ export default function Home() {
   <Player
     src="/animation.json"
     background="transparent"
-    speed="1"
+    speed={1}
     loop
     autoplay
   ></Player>
