@@ -1,5 +1,6 @@
 "use client"; // Mark as a Client Component
 
+import '@lottiefiles/lottie-player';
 import Image from "next/image";
 import Head from "next/head";
 import { useState } from "react";
@@ -76,7 +77,7 @@ export default function Home() {
         
 <div className="animation-container">
   <lottie-player
-    src="path/to/your/animation.json"
+    src="/animation.json"
     background="transparent"
     speed="1"
     loop
