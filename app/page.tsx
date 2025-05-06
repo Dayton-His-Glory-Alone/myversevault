@@ -67,7 +67,7 @@ export default function Home() {
       <main className="flex flex-col items-center gap-8 px-4">
         {/* vv2.png Image */}
         <Image
-          src="/vv2.png"
+          src="/versevaultpromo.png"
           alt="App Promo in Action"
           width={600}
           height={400}
