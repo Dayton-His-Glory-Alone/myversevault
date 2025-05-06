@@ -1,6 +1,7 @@
 "use client"; // Mark as a Client Component
 
-import '@lottiefiles/lottie-player';
+
+import { Player } from '@lottiefiles/react-lottie-player';
 import Image from "next/image";
 import Head from "next/head";
 import { useState } from "react";
