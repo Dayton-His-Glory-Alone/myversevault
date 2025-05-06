@@ -73,6 +73,17 @@ export default function Home() {
           height={400}
           className="rounded-lg shadow-lg"
         />
+        
+<div className="animation-container">
+  <lottie-player
+    src="path/to/your/animation.json"
+    background="transparent"
+    speed="1"
+    loop
+    autoplay
+  ></lottie-player>
+</div>
+
         <p className={`text-center text-lg max-w-prose ${roboto.className}`}>
           Create a habit of locking in scripture. Our diverse learning methods, including flashcards, interactive exercises, typing practice, and voice mode, ensure effective retention.
         </p>
