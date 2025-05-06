@@ -77,13 +77,13 @@ export default function Home() {
         />
         
 <div className="animation-container">
-  <lottie-player
+  <Player
     src="/animation.json"
     background="transparent"
     speed="1"
     loop
     autoplay
-  ></lottie-player>
+  ></Player>
 </div>
 
         <p className={`text-center text-lg max-w-prose ${roboto.className}`}>
