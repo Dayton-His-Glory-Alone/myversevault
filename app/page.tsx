@@ -177,9 +177,10 @@ export default function Home() {
           </button>
           {showStory && (
             <div className="mt-4 p-4 bg-white rounded-lg shadow-md">
-              <p className="text-gray-700">
-                My wife and I wanted to make a habit of memorizing scripture together so we started something we called <i>Monday Memory</i> where we would spend 10 minutes going over a passage. My goal was to make those nights fun and engaging. It started well but slowly we lost track of the verses we already had memorized and the new passages were getting more difficult. I wanted a tool that could 1. keep track of what I have memorized and remind me to refresh and 2. make it fun. With those goals, I started working on Verse Vault. After a couple failed attempts I finally got a working app that is something I like to use for myself now. I would like to share that with others and hope it encourages you as well.
-              </p>
+<p className="text-gray-700">
+  My wife and I wanted to make a habit of memorizing scripture together, so we started something we called <i>Monday Memory</i>, where we would spend 10 minutes going over a passage. My goal was to make those nights fun and engaging. It started well, but slowly we lost track of the verses we had already memorized, and the new passages were getting more difficult. I wanted a tool that could: 1. keep track of what I have memorized and remind me to refresh, and 2. make it fun. With those goals, I started working on Verse Vault. After a couple of failed attempts, I finally got a working app that I like to use for myself now. I would like to share that with others and hope it encourages you as well.
+</p>
+
             </div>
           )}
         </div>
