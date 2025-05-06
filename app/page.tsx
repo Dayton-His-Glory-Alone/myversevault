@@ -6,12 +6,7 @@ import Image from "next/image";
 import Head from "next/head";
 import { useState } from "react";
 import { Roboto } from "next/font/google";
-import dynamic from 'next/dynamic';
 
-const LottiePlayer = dynamic(
-  () => import('@lottiefiles/react-lottie-player').then(mod => mod.Player),
-  { ssr: false }
-);
 // Configure the Roboto font
 const roboto = Roboto({
   weight: ["400", "700"],
@@ -81,16 +76,13 @@ export default function Home() {
           className="rounded-lg shadow-lg"
         />
         
-<div className="animation-container">
-  <LottiePlayer
-    src="/animation.json"
-    background="transparent"
-    speed={1}
-    loop
-    autoplay
-  />
 </div>
-
+  <img
+    src="/animation.gif"
+    alt="Animated illustration"
+    style={{ height: '300px', width: '300px' }}
+  />
+</div>
         <p className={`text-center text-lg max-w-prose ${roboto.className}`}>
           Create a habit of locking in scripture. Our diverse learning methods, including flashcards, interactive exercises, typing practice, and voice mode, ensure effective retention.
         </p>
