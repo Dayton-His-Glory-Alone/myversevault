@@ -75,14 +75,13 @@ export default function Home() {
           height={400}
           className="rounded-lg shadow-lg"
         />
-        
-</div>
-  <img
+          <img
     src="/animation.gif"
     alt="Animated illustration"
     style={{ height: '300px', width: '300px' }}
   />
 </div>
+  
         <p className={`text-center text-lg max-w-prose ${roboto.className}`}>
           Create a habit of locking in scripture. Our diverse learning methods, including flashcards, interactive exercises, typing practice, and voice mode, ensure effective retention.
         </p>
