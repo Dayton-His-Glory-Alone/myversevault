@@ -1,8 +1,3 @@
-The issue comes from a misplaced closing `</div>` tag **right after the `<img src="/animation.gif" ... />` element**. That `</div>` prematurely closes the main wrapper, causing the JSX parser to throw an error.
-
-Here’s the **corrected and full `page.tsx`** code with that issue fixed:
-
-```tsx
 "use client"; // Mark as a Client Component
 
 import Image from "next/image";
@@ -248,6 +243,3 @@ export default function Home() {
     </div>
   );
 }
-```
-
-Let me know if you want the file as a downloadable copy or need help deploying it.
