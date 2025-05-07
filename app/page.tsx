@@ -1,6 +1,7 @@
 "use client"; // Mark as a Client Component
 
 import Image from "next/image";
+import { Book, Brain, Keyboard, Mic } from "lucide-react";
 import Head from "next/head";
 import { useState } from "react";
 import { Roboto } from "next/font/google";
@@ -80,7 +81,7 @@ export default function Home() {
         <img
           src="/animation.gif"
           alt="Animated illustration"
-          style={{ height: "50px", width: "50px" }}
+          style={{ height: "100px", width: "100px" }}
         />
 
         {/* Description */}
@@ -89,7 +90,24 @@ export default function Home() {
           including flashcards, interactive exercises, typing practice, and
           voice mode, ensure effective retention.
         </p>
-
+<div className="flex justify-center mt-4 gap-6 text-gray-700">
+  <div className="flex flex-col items-center">
+    <Book className="w-6 h-6" />
+    <span className="text-sm">Flashcards</span>
+  </div>
+  <div className="flex flex-col items-center">
+    <Brain className="w-6 h-6" />
+    <span className="text-sm">Interactive</span>
+  </div>
+  <div className="flex flex-col items-center">
+    <Keyboard className="w-6 h-6" />
+    <span className="text-sm">Typing</span>
+  </div>
+  <div className="flex flex-col items-center">
+    <Mic className="w-6 h-6" />
+    <span className="text-sm">Voice</span>
+  </div>
+</div>
         {/* Video Section */}
         <div className="w-full max-w-xs">
           <video controls loop className="rounded-lg shadow-lg w-full">
