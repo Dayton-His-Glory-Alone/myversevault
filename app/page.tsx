@@ -250,7 +250,7 @@ export default function Home() {
         <p className={`text-sm ${roboto.className}`}>
           Explore the web version at{" "}
           <a
-            href="https://versevault.app"
+            href="https://myversevault.app"
             className="text-blue-500 hover:underline"
             target="_blank"
             rel="noopener noreferrer"
