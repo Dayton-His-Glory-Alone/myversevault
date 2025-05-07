@@ -255,7 +255,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            versevault.app
+            myversevault.app
           </a>
         </p>
       </footer>
