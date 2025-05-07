@@ -84,7 +84,7 @@ export default function Home() {
           style={{ height: "100px", width: "100px" }}
         />
 
-        <div className="flex justify-center mt-4 gap-6 text-gray-700">
+        <div className="flex justify-center mt-1 gap-6 text-gray-700">
   <div className="flex flex-col items-center">
     <Book className="w-6 h-6" />
     <span className="text-sm">Flashcards</span>
