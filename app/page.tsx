@@ -84,13 +84,7 @@ export default function Home() {
           style={{ height: "100px", width: "100px" }}
         />
 
-        {/* Description */}
-        <p className={`text-center text-lg max-w-prose ${roboto.className}`}>
-          Create a habit of locking in scripture. Our diverse learning methods,
-          including flashcards, interactive exercises, typing practice, and
-          voice mode, ensure effective retention.
-        </p>
-<div className="flex justify-center mt-4 gap-6 text-gray-700">
+        <div className="flex justify-center mt-4 gap-6 text-gray-700">
   <div className="flex flex-col items-center">
     <Book className="w-6 h-6" />
     <span className="text-sm">Flashcards</span>
@@ -108,6 +102,13 @@ export default function Home() {
     <span className="text-sm">Voice</span>
   </div>
 </div>
+        {/* Description */}
+        <p className={`text-center text-lg max-w-prose ${roboto.className}`}>
+          Create a habit of locking in scripture. Our many learning methods,
+          including flashcards, interactive exercises, typing practice, and
+          voice mode, ensure effective retention.
+        </p>
+
         {/* Video Section */}
         <div className="w-full max-w-xs">
           <video controls loop className="rounded-lg shadow-lg w-full">
